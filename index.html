@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        window.onload = function() {
+            var userAgent = navigator.userAgent.toLowerCase();
+            var isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+            
+            if (!isMobile) {
+                alert("Esta descarga solo está disponible para dispositivos móviles.");
+                window.location.href = "advertencia.html";
+            }
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Aplicación</h1>
+    </header>
+    <p>Haz clic en el enlace para descargar la aplicaciónnnnnn:</p>
+    <a href="AsistenciaDuoc.apk" download>Descargar Aplicación</a>
+    <p class="warning">Nota: Esta descarga solo está disponible para dispositivos móviles.</p>
+</body>
+</html>
+
