@@ -16,7 +16,7 @@ function downloadApk() {
 
     if (isMobile) {
         // Si es un navegador móvil, redirige a la descarga del APK
-        href = 'AsistenciaDuco.apk'; // Ajusta la ruta según tu estructura
+        href = 'registrAPP.apk'; // Ajusta la ruta según tu estructura
     } else {
         // Si es un navegador de escritorio, muestra un mensaje de error
         alert('Ingrese desde un dispositivo móvil para poder descargar la aplicación.');
