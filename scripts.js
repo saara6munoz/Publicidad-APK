@@ -1,5 +1,14 @@
+window.onload = function() {
+    var userAgent = navigator.userAgent.toLowerCase();
+    var isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+    
+    if (!isMobile) {
+        alert("Debe realizar la descarga desde un dispositivo móvil.");
+        window.location.href = "advertencia.html";
+    }
+};
+
 function downloadApk() {
-    alert('hola')
     var userAgent = navigator.userAgent.toLowerCase();
 
     // Verifica si el usuario está utilizando un navegador móvil
@@ -10,6 +19,6 @@ function downloadApk() {
         href = 'AsistenciaDuco.apk'; // Ajusta la ruta según tu estructura
     } else {
         // Si es un navegador de escritorio, muestra un mensaje de error
-        alert('La descarga está disponible solo desde dispositivos móviles.');
+        alert('Ingrese desde un dispositivo móvil para poder descargar la aplicación.');
     }
 }
